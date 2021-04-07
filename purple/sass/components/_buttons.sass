@@ -1,0 +1,22 @@
+.sub-btn
+  @extend %button
+  display: inline-block
+  background-color: $purple-material
+  text-decoration: none
+  color: $white
+  width: 120px
+  height: 40px
+  @include line-height(40px)
+  position: relative
+  margin-left: 15px
+  @include letter-space(2px)
+  &:hover
+    @include lighten($purple-material, 5%)
+    text-decoration: none
+    color: $white
+  @include media-breakpoint-down(xs)
+    margin: 20px auto
+
+.signup
+  .btn
+    @extend %button
